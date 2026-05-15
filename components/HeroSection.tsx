@@ -93,7 +93,7 @@ export default function HeroSection() {
             className="font-display text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-[#E5E5CB] font-light leading-none tracking-tight"
             initial={{ y: '100%' }}
             animate={{ y: 0 }}
-            transition={{ delay: 3.4, duration: 1, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ delay: 3.4, duration: 1, ease: [0.16, 1, 0.3, 1] as const }}
           >
             Kopi
           </motion.h1>
@@ -103,7 +103,7 @@ export default function HeroSection() {
             className="flex items-center justify-center gap-4 md:gap-6"
             initial={{ y: '100%' }}
             animate={{ y: 0 }}
-            transition={{ delay: 3.55, duration: 1, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ delay: 3.55, duration: 1, ease: [0.16, 1, 0.3, 1] as const }}
           >
             <span className="font-display text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-light leading-none text-gold-gradient">
               Pakpos
@@ -115,7 +115,7 @@ export default function HeroSection() {
             className="font-display italic text-2xl sm:text-3xl md:text-4xl text-[#C8A97E]/70 font-light"
             initial={{ y: '100%' }}
             animate={{ y: 0 }}
-            transition={{ delay: 3.7, duration: 1, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ delay: 3.7, duration: 1, ease: [0.16, 1, 0.3, 1] as const }}
           >
             Nol Kilometer
           </motion.p>

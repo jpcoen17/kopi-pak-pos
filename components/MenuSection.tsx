@@ -14,7 +14,7 @@ function MenuCard({ item, index }: { item: any; index: number }) {
       initial={{ opacity: 0, y: 24 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -16 }}
-      transition={{ duration: 0.45, delay: index * 0.03, ease: [0.16, 1, 0.3, 1] }}
+      transition={{ duration: 0.45, delay: index * 0.03, ease: [0.16, 1, 0.3, 1] as const }}
       className="group relative glass-card p-5 hover:border-[#C8A97E]/40 transition-all duration-400 overflow-hidden"
     >
       {/* Hover glow */}
@@ -72,7 +72,7 @@ export default function MenuSection() {
           className="text-center mb-16"
           initial={{ opacity: 0, y: 40 }}
           animate={visible ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] as const }}
         >
           <p className="font-mono text-[#C8A97E] text-xs tracking-[0.5em] uppercase mb-4">✦ Sajian Kami</p>
           <h2 className="font-display text-5xl md:text-6xl lg:text-7xl text-[#E5E5CB] mb-4">

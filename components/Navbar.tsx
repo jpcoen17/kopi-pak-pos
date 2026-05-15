@@ -34,7 +34,7 @@ export default function Navbar() {
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'nav-scrolled py-2' : 'py-4'}`}
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        transition={{ duration: 0.8, delay: 2.8, ease: [0.16, 1, 0.3, 1] }}
+        transition={{ duration: 0.8, delay: 2.8, ease: [0.16, 1, 0.3, 1] as const }}
       >
         <nav className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           {/* Logo */}
@@ -105,7 +105,7 @@ export default function Navbar() {
             initial={{ opacity: 0, x: '100%' }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: '100%' }}
-            transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] as const }}
           >
             <div className="flex-1 flex flex-col items-center justify-center gap-8 pt-20">
               <p className="text-[#C8A97E] font-mono text-xs tracking-[0.5em] uppercase mb-4">✦ Menu ✦</p>

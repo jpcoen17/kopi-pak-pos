@@ -68,7 +68,7 @@ export default function BranchSection() {
           className="grid lg:grid-cols-2 gap-8 lg:gap-12"
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] as const }}
         >
           {/* Info card */}
           <div className="glass-card p-8 md:p-10 relative overflow-hidden">
